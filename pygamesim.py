@@ -26,7 +26,7 @@ screen.blit(background_image, (0, 0))
 #Creating our model class
 
 class Model(nn.Module):
-  # Input layer (4 features) -> hidden layer1 (some neuron count) -> hidden layer2 (neurons) -> output (3 classes of Iris)
+  # Input layer (4 features) -> hidden layer1 (some neuron count) -> hidden layer2 (neurons) -> output (3 classes)
   def __init__(self, in_features=20, h1 = 40, h2=40, h3=40, h4 =20, out_features=4):
     super().__init__()
     self.fc1 = nn.Linear(in_features, h1)
